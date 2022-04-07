@@ -1,0 +1,87 @@
+<script type="text/javascript">
+'use strict'
+
+	
+		let func = (question, yes, no) => {
+			if(confirm(question)) yes()
+			else no();
+		} 
+
+		func(
+			"How are you, today, sir?",
+			 () => {alert('Nice one');},
+			 ()	=> {alert('Fuck off');}
+			 );
+
+
+
+
+
+
+
+
+
+
+
+
+	/*function pow(x, n){
+		 x = +prompt("Введите число x, которое будем умножать n раз.");
+		 n = +prompt("Введите число n");
+
+		let result = x**n;
+		if(n > 0){
+		return alert(result);
+		} else {
+			return alert("Введите число n от 1 и выше!");
+		}
+	}
+
+	pow();
+
+
+	function min(a, b){
+		if(a > b){
+			return alert("Число №1 больше!");
+		} else if (a < b){
+			return alert("Число №2 больше!");
+		} else {
+			return alert("Числа равны!");
+		}
+	}
+		
+	min(2, 2);
+
+	let age = prompt('Введите свой возраст');
+	
+	function checkAge(age){
+
+	return (age > 18) ? true : confirm('Родители разрешили?');
+
+	}
+
+	alert(age);
+
+
+	let age = prompt('Введите свой возраст');
+	let message;
+	let confirmText = 'Родители разрешили?';
+	
+	message = age >= 18 || confirmText;
+
+	alert(message);
+
+
+
+	function anotherFunction(){
+		alert('КУ-КУ епта');
+	}
+
+	function showMessage(from, text = anotherFunction()) {
+		  alert(from + text);
+	}
+
+	showMessage('World', "Дядя");*/
+
+
+
+</script>

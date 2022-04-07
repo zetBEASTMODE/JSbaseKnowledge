@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	
+	var summa = +prompt("Введите сумму вклада");
+	var percent = +prompt("Введите ежегодный процент вклада");
+	var result = ' Итоговое значение вклада по годам:\n';
+
+	var year = 1;
+	while(year <= 5){
+		var calc = (summa * (1 + (percent / 100))**year)
+		result += year + ' год ' + calc.toFixed(1) + ' рублей\n';
+		year++
+		}
+		alert(result);
+
+	/*var oneYear = (summa + (summa * (percent / 100)));
+		document.write("Размер вклада за первый год: " + oneYear + "<br />");
+
+	var secondYear = (oneYear + (oneYear * (percent / 100)))
+		document.write("Размер вклада за второй год: " + secondYear + "<br />");
+	var thirdYear = (secondYear + (secondYear * (percent / 100)))
+		document.write("Размер вклада за третий год: " + thirdYear + "<br />");
+
+	var fourYear = (thirdYear + (thirdYear * (percent / 100)))
+		document.write("Размер вклада за четвертый год: " + fourYear + "<br />");
+	var fiveYear = (fourYear + (fourYear * (percent / 100)))
+		document.write("Размер вклада за пятый год: " + fiveYear + "<br />");*/
+
+</script>
+

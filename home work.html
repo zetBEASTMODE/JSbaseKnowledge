@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+	var a = prompt("Введите значение числа А");
+	var b = prompt("Введите значение числа B");
+	var c = prompt("Введите значение числа C");
+
+	a = parseInt(a);
+	b = parseInt(b);
+	c = parseInt(c);
+
+	var d = (b**2) - 4 * a * c;
+
+	d = parseInt(d);
+
+	alert("Значение дискрименанта:" + d);
+
+	var x = ((-b + (Math.sqrt(d))) / (2 * a))
+
+	alert("Значение первого корня:" + x);
+
+	var z = ((-b - (Math.sqrt(d)))/ (2 * a))
+
+	
+
+	alert("Значение второго корня:" + z);
+
+
+</script>

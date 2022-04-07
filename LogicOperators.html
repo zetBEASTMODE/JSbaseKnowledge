@@ -1,0 +1,16 @@
+<script type="text/javascript">
+	
+	let userName = prompt("Введите логин");
+
+	if(userName == "admin"){
+		let userPassword = prompt("Введите пароль");
+		let checkPassword = (userPassword == "Я главный") ? "Здравствуйте!" : 
+			(userPassword == " " || null) ? "Отменено" : "Неверный пароль!";
+			alert(checkPassword);
+	} else if(userName == " " || null) {
+		alert("Отменено");
+	} else {
+		alert("Я вас не знаю!")
+	}
+
+</script>
